@@ -1,0 +1,185 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: sans-serif;
+  color: white;
+}
+.container{
+    background-image: url("./jellyfish.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+}
+.container::before {
+    content: '';
+    background-color: rgba(0,0,40,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%  ;
+}
+.nav img{
+    height: 80px;
+    width: 180px;
+}
+.nav button{
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.disc {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.disc h1{
+    font-size: 65px;
+    margin: 15px 0px;
+    letter-spacing: 1px;
+}
+.disc button{
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.disc small{
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.side-bar{
+    height: 100vh;
+    width: 50px;
+    background: linear-gradient(#2a0e6d, #14151b);
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    z-index: 3;
+}
+.menu{
+    position: absolute;
+    display: block;
+    z-index: 4;
+    width: 30px;
+    margin: 45px auto 0px;
+}
+.m{
+    transform: translateX(25%);
+    height: 20px;
+    width: 20px;
+}
+.menu img{
+    height: 30px;
+    width: 30px;
+    margin: 5px auto;
+}
+.social-links{
+    width: 50px;
+    position: absolute;
+    top: 110%;
+    text-align: center;
+    transform: translateY(50%);
+} 
+.social-link{
+    width: 50px;
+    position: relative;
+    text-align: center;
+    top: 450px;
+} 
+
+.bubbles {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    bottom: -70px; 
+}
+.bubbles img{
+    height: 50px;
+    width: 50px;
+    animation: bubble 7s 0s linear infinite;
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    70%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+
+}
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    height:30px ;
+    width: 30px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+    height: 45px;
+    width: 45px;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    height: 25px;
+    width: 25px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+    height: 35px;
+    width: 35px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 3s;
+    height: 40px;
+    width: 40px;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 6s;
+    height: 50px;
+    width: 50px;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 7s;
+    height: 55px;
+    width: 55px;
+}
+.bubbles img:nth-child(8){
+    animation-delay: 4s;
+    height: 55px;
+    width: 55px;
+}
+.bubbles img:nth-child(9){
+    animation-delay: 3s;
+    height: 55px;
+    width: 55px;
+}
+.bubbles img:nth-child(10){
+    animation-delay: 2s;
+    height: 55px;
+    width: 55px;
+}
